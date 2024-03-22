@@ -1,16 +1,16 @@
 version: '3'
-services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-    restart: always
 
+services:
   nginx:
     image: nginx:latest
     ports:
       - "8080:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
-      - app
+      - nodejs
+
+  nodejs:
+    build: ./challenge2
+    ports:
+      - "3000:3000"
