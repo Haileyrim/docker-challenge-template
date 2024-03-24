@@ -28,3 +28,5 @@ Include screenshots of the running web server and the page being served here.
 
 ## Conclusion
 This project served as an introduction to Docker and demonstrated how to create a simple web server for serving static web pages. I've learned the basics of Dockerfile creation, image building, and container deployment, which will be valuable for future projects.
+
+# Challenge2 : Creating a Dynamic Application
