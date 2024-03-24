@@ -30,3 +30,41 @@ Include screenshots of the running web server and the page being served here.
 This project served as an introduction to Docker and demonstrated how to create a simple web server for serving static web pages. I've learned the basics of Dockerfile creation, image building, and container deployment, which will be valuable for future projects.
 
 # Challenge2 : Creating a Dynamic Application
+
+## Setup
+- Use the "Challenge2" folder.
+- Add all files to the challenge's root folder.
+- My directory structure looks like this.
+docker-challenge-template/
+│
+└── challenge2/
+    ├── Dockerfile
+    ├── docker-compose.yml
+    ├── server.js
+    ├── package.json
+    ├── package-lock.json
+    └── nginx.conf
+
+
+## Create Dockerfile
+- Create Dockerfile to buid the server's Docker constainer
+*The Dockerfile should include instructions to set up Node.js and copy the application code into*
+
+## Create Docker Compose File
+- Create a docker-compose.yml file to define services and orchestrate them.
+
+## NGINX Configuration
+- This configuration forwards requests to /api/books to the Node.js application.
+
+## Build and Run
+- Run "docker-compose up" command. This will build the Docker image and start the containers defined in the "docker-compose up".
+
+## Verify
+- I got 'http://localhost:8080/api/books' and 'http://localhost:8080/api/books/1'.
+- Open Browser and navigate to these two URLs.
+
+
+
+
+
+
