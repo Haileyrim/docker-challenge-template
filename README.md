@@ -30,14 +30,14 @@ Include screenshots of the running web server and the page being served here.
 <img width="960" alt="Screenshot2" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/e46454bd-451e-4dbc-9151-eccbf3dd09dd">
 
 ## Conclusion
-This project served as an introduction to Docker and demonstrated how to create a simple web server for serving static web pages. I've learned the basics of Dockerfile creation, image building, and container deployment, which will be valuable for future projects.
+This project showed how to build a basic web server for providing static web pages and provided an introduction to Docker. My understanding of the fundamentals of creating Dockerfiles, creating images, and deploying containers will be helpful for next tasks.
 
 # Challenge2 : Creating a Dynamic Application
 
 ## Setup
-- Use the "Challenge2" folder.
-- Add all files to the challenge's root folder.
-- My directory structure looks like this.
+- Used the "Challenge2.zip" folder.
+- Added all files to the challenge's root folder.
+- My directory structure looks like this!
 docker-challenge-template/
 │
 └── challenge2/
@@ -50,24 +50,24 @@ docker-challenge-template/
 
 
 ## Create Dockerfile
-- Create Dockerfile to buid the server's Docker constainer
-*The Dockerfile should include instructions to set up Node.js and copy the application code into*
+- Built the server's Docker container by creating a Dockerfile.
+*The Dockerfile should contain instructions on how to install Node.js and move the application code into*
 
 ## Create Docker Compose File
-- Create a docker-compose.yml file to define services and orchestrate them.
-
+- A docker-compose.yml file was created in order to organise and specify services.
+  
 ## NGINX Configuration
 - This configuration forwards requests to /api/books to the Node.js application.
 
 ## Build and Run
-- Run "docker-compose up" command. This will build the Docker image and start the containers defined in the "docker-compose up".
+- Run "docker-compose up" command. This built the Docker image and start the containers defined in the "docker-compose up".
 
 ## Verify
 - I got 'http://localhost:8080/api/books' and 'http://localhost:8080/api/books/1'.
 - Open Browser and navigate to these two URLs.
 
-
-
-
+## Screenshots of Outcome
+<img width="960" alt="Screenshot4" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/228aa733-3b1d-4983-b97c-57e39fae654a">
+<img width="960" alt="Screenshot3" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/3771e123-a0c1-48fc-a17d-af13678cd38f">
 
 
