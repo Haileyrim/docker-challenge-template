@@ -1,30 +1,31 @@
 # Challenge 1: Simple Web Server for Static Web Pages
 
 ## Introduction
-In this challenge, I've built a simple web server using Docker to serve static web pages. This README.md file provides information about the project, how to run it, and what I can expect to find in the repository.
+For this project, I created a basic web server that serves static web pages by utilizing Docker. About the project, how to run it, and what's in the repository are all explained in this README.md file.
 
 ## About the Project
-This project aims to demonstrate the basics of Docker by creating a Docker image that serves static web pages using NGINX. The web pages are stored in a public folder, and the main page is named index.html, which contains my name and student ID number.
+In order to illustrate the fundamentals of Docker, this project uses NGINX to create a Docker image that delivers static web pages. The primary page, index.html, has my name and student ID number on it. The web pages are kept in a public subdirectory.
 
 ## Getting Started
-To run this project locally, you'll need Docker installed on your system. Once Docker is installed, follow these steps:
+To run this project locally, I installed Docker descktop on your system. Once Docker descktop is installed, follow these steps:
 
-1. Clone this repository to your local machine.
-2. Navigate to the challenge1 directory.
-3. Build the Docker image using the following command:
+1. Cloned this repository to my local machine.
+2. Navigated to the challenge 1 directory.
+3. Built the Docker image using the following command:
    docker build -t my-static-server .
-4. Once the image is built, run the Docker container with the following command:
-   docker run -d -p 8080:80 my-static-server
-5. Access the web server by opening a web browser and navigating to http://localhost:8080.
+4. Use the following command to launch the Docker container after the image has been built:
+   Docker run 8080:80 -d -p my-static-server
+5. Open a web browser and go to http://localhost:8080 to access the web server.
 
 ## Repository Structure
-Dockerfile: Defines the instructions for building the Docker image.
-public/: Directory containing static web pages and assets.
-index.html: Main HTML file with my name and student ID number.
-README.md: This file, providing information about the project and how to run it.
+Dockerfile: Specifies how the Docker image is to be built.
+public/: A directory holding assets and static webpages.
+The main HTML file, index.html, has my name and student ID number.
+README.md This file, which offers instructions on how to execute the project and its details.
 
 ## Screenshots
 Include screenshots of the running web server and the page being served here.
+
 
 ## Conclusion
 This project served as an introduction to Docker and demonstrated how to create a simple web server for serving static web pages. I've learned the basics of Dockerfile creation, image building, and container deployment, which will be valuable for future projects.
