@@ -26,6 +26,7 @@ README.md This file, which offers instructions on how to execute the project and
 ## Screenshots
 Include screenshots of the running web server and the page being served here.
 
+<img width="960" alt="Screenshot1" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/0a82992e-d2b7-49f1-942b-7ba51bd6e197">
 
 ## Conclusion
 This project served as an introduction to Docker and demonstrated how to create a simple web server for serving static web pages. I've learned the basics of Dockerfile creation, image building, and container deployment, which will be valuable for future projects.
