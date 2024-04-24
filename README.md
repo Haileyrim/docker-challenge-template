@@ -74,12 +74,21 @@ docker-challenge-template/
 # Challenge3: Full stack application
 
 ## Set up
+<img width="95" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/597b2f3f-28c7-4cb5-bf6a-de6587682459">
 
 ## Steps
-
+- Create the .env file with the correct values for the variables mentioned in the challenge, like DB_ROOT_PASSWORD, DB_DATABASE, DB_USERNAME, DB_PASSWORD, and DB_HOST.
+- Create the docker-compose.yml file to define the services that make up your application. I stuggled this part because of directory like port mapping and connect thing. I wrote 3 parts of services which are nginx, db and node-service. I wrote each build, ports, volumes, and environment. 
+- For the nginx.conf, I missed the even{} and my 8081:80 didn't work. Finally, I found my mistake and I fixed it.
+- Build and run my app: I did 'docker-compose up' to start my app. 
+- AS using 'docker-compose ps', I can check my app status of services.
+- I tested my app through “http://localhost:8080/api/books” and “http://localhost:8080/api/books/1” browser.
+  
 ## Verify
+When I requested “http://localhost:8080/api/books”, I a JSON message with all books and when I requested “http://localhost:8080/api/books/1”, i got a JSON message with just one book.
 
 ## Screenshots of Outcome
+<img width="726" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/6ef395dc-1dd1-4ed5-a182-56b56f329c90">
 <img width="737" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/04d40a58-5c2a-46c5-a8a6-9042a18ebe68">
 
 
