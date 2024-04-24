@@ -95,10 +95,20 @@ When I requested “http://localhost:8080/api/books”, I a JSON message with al
 # Challenge4: Scaling up an application
 
 ## Set up
-
+- Copy the challenge3 folder into challenge4 directory
 ## Steps
-
+- I tested current setup first
+- Scaled the services: use "docker-compose up -d --scale node-service=3" command to run 3 instances of the node-service service.
+- Test the scaled setup: I requested to http://localhost:8080/api/stats and different hostnames should be visible to you, suggesting that the load is being split among several instances.
 ## Verify
+- You can run "docker-compose up -d --scale node-service=3" command to verify and done!
 
 ## Screenshots of Outcome
+<img width="542" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/d2a23cab-c2e0-4bae-a89e-89d72c687bd9">
+<img width="422" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/21fa2440-c3f7-4331-9840-744689ea4acc">
+<img width="714" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/8cb9fa1b-01ac-4bad-acb1-feae1c36ad1e">
+<img width="530" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/fec3852f-509c-49d1-8ec0-1c42603a5e49">
+
+
+
 
