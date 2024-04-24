@@ -1,14 +1,6 @@
 version: '3.8'
 services:
-  nginx:
-    build: 
-      context: ./docker/nginx
-    restart: always
-    ports:
-      - "8082:80"
-    depends_on:
-      - node-service
-    
+
   db:
     build:
       context: ./docker/db
@@ -19,10 +11,16 @@ services:
       - MYSQL_PASSWORD= ${MYSQL_PASSWORD}
       - MYSQL_ROOT_PASSWORD= ${MYSQL_ROOT_PASSWORD}
       - MYSQL_DATABASE= ${MYSQL_DATABASE}
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      -"3306:3306"
+
 
   node-service:
     build: 
       context: ./docker/api
+    restart: always
     depends_on:
       - db
     environment:
@@ -33,6 +31,17 @@ services:
       - DB_DATABASE= ${DB_DATABASE}
     ports:
       - "3000"
+
+  nginx:
+    build: 
+      context: ./docker/nginx
+    restart: always
+    ports:
+      - "8082:80"
+    depends_on:
+      - node-service
+volumes:
+  db-data:
 
     
   
