@@ -71,3 +71,25 @@ docker-challenge-template/
 <img width="960" alt="Screenshot3" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/3771e123-a0c1-48fc-a17d-af13678cd38f">
 
 
+# Challenge3: Full stack application
+
+## Set up
+
+## Steps
+
+## Verify
+
+## Screenshots of Outcome
+<img width="737" alt="image" src="https://github.com/Haileyrim/docker-challenge-template/assets/120137270/04d40a58-5c2a-46c5-a8a6-9042a18ebe68">
+
+
+# Challenge4: Scaling up an application
+
+## Set up
+
+## Steps
+
+## Verify
+
+## Screenshots of Outcome
+
